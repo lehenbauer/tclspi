@@ -1,5 +1,5 @@
 #
-# Tcl package index file for tclspli @PACKAGE_VERSION@
+# Tcl package index file for spi @PACKAGE_VERSION@
 #
-package ifneeded tclspli @PACKAGE_VERSION@ \
+package ifneeded spi @PACKAGE_VERSION@ \
     [list load [file join $dir @PKG_LIB_FILE@]]\n[list source [file join $dir spi.tcl]]

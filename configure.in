@@ -93,7 +93,7 @@ TEA_ADD_TCL_SOURCES([spi.tcl])
 #--------------------------------------------------------------------
 #CLEANFILES=""
 if test "${TEA_PLATFORM}" = "windows" ; then
-    AC_DEFINE(BUILD_tclspline, 1, [Build windows export dll])
+    AC_DEFINE(BUILD_spi, 1, [Build windows export dll])
     CLEANFILES="$CLEANFILES *.lib *.dll *.exp *.ilk *.pdb vc*.pch"
     #TEA_ADD_SOURCES([win/winFile.c])
     #TEA_ADD_INCLUDES([-I\"$(${CYGPATH} ${srcdir}/win)\"])

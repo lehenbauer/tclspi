@@ -1,5 +1,5 @@
 /*
- * tclspi_Init and tclspi_SafeInit
+ * Spi_Init and Spi_SafeInit
  *
  * Copyright (C) 2010 FlightAware
  *
@@ -17,9 +17,9 @@
 /*
  *----------------------------------------------------------------------
  *
- * tclspi_Init --
+ * Spi_Init --
  *
- *	Initialize the tclspi extension.  The string "tclspi" 
+ *	Initialize the spi extension.  The string "spi" 
  *      in the function name must match the PACKAGE declaration at the top of
  *	configure.in.
  *
@@ -33,7 +33,7 @@
  */
 
 EXTERN int
-Tclspi_Init(Tcl_Interp *interp)
+Spi_Init(Tcl_Interp *interp)
 {
     /*
      * This may work with 8.0, but we are using strictly stubs here,
@@ -61,9 +61,9 @@ Tclspi_Init(Tcl_Interp *interp)
 /*
  *----------------------------------------------------------------------
  *
- * tclspi_SafeInit --
+ * Spi_SafeInit --
  *
- *	Initialize the tclspi in a safe interpreter.
+ *	Initialize the spi extension in a safe interpreter.
  *
  *      This should be totally safe.
  *
@@ -77,7 +77,7 @@ Tclspi_Init(Tcl_Interp *interp)
  */
 
 EXTERN int
-Tclspi_SafeInit(Tcl_Interp *interp)
+Spi_SafeInit(Tcl_Interp *interp)
 {
     /*
      * This may work with 8.0, but we are using strictly stubs here,
