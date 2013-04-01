@@ -1,6 +1,6 @@
 
 package require Tclx
-package require tclspi
+package require spi
 
 proc setup_spi {} {
     set spi [spi #auto /dev/spidev0.0]

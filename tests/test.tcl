@@ -1,5 +1,10 @@
-
-package require tclspi
+#
+# tclspi test - if you have wired the SPI clock out to the SPI clock in
+#  and the SPI data out line to the data in line, then whatever you write
+#  to the SPI interface should be read back
+#
+#
+package require spi
 
 set spi [spi #auto /dev/spidev0.0]
 
