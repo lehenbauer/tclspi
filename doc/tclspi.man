@@ -1,0 +1,19 @@
+[manpage_begin t lspi n 1.0]
+[moddesc   {Tcl bindings Serial Peripheral Interface Bus (SPI)}]
+[copyright {2013 Karl Lehenbauer (BSD Liscense)}]
+[titledesc {Tcl bindings for Serial Peripheral Interface Bus (SPI)}]
+[description]
+[para]
+
+tclspi is a Tcl C extension written to communicate with the Serial
+Peripheral Interface Bus (SPI).
+
+[para]
+
+THAT'S IT SO FAR
+
+[para]
+
+
+[keywords SPI tclspi]
+[manpage_end]

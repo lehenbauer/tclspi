@@ -1,0 +1,7 @@
+#
+# tclspi configure for Raspberry Pi
+#
+
+autoconf
+./configure --with-tcl=/usr/lib/tcl8.5  --enable-symbols
+
