@@ -14,7 +14,7 @@ package require spi
 ```
 
 Example
-===========
+-------
 
 ```package require spi
 
@@ -38,7 +38,7 @@ $spi delete
 ```
 
 Contents
-========
+--------
 
 ```Makefile.in```	Makefile template.  The configure script uses this file to
 		produce the final Makefile.
@@ -70,7 +70,7 @@ Contents
 		aclocal.m4 to define SC_* macros.
 
 Building
-==========
+--------
 
 Unix
 ----------
@@ -97,7 +97,7 @@ If you have VC++, then you may wish to use the files in the win subdirectory and
 Instructions for using the VC++ makefile are written in the first part of the Makefile.vc file.
 
 Installation
-============
+-------------
 
 ```bash
 make install
