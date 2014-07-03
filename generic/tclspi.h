@@ -2,7 +2,7 @@
  *
  * Include file for tclspi package
  *
- * Copyright (C) 2013 by FlightAware, All Rights Reserved
+ * Copyright (C) 2013 by Karl Lehenbauer, All Rights Reserved
  *
  * Freely redistributable under the Berkeley copyright, see license.terms
  * for details.

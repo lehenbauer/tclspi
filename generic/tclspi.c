@@ -1,14 +1,14 @@
 /*
  * Spi_Init and Spi_SafeInit
  *
- * Copyright (C) 2010 FlightAware
+ * Copyright (C) 2013 - 2014 Karl Lehenbauer, All Rights Reserved
  *
  * Freely redistributable under the Berkeley copyright.  See license.terms
  * for details.
  */
 
 #include <tcl.h>
-#include "spi.h"
+#include "tclspi.h"
 
 #undef TCL_STORAGE_CLASS
 #define TCL_STORAGE_CLASS DLLEXPORT

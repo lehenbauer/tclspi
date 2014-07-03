@@ -3,7 +3,7 @@
  */
 
 #include <tcl.h>
-#include "spi.h"
+#include "tclspi.h"
 #include <string.h>
 
 
