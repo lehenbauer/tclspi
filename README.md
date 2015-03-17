@@ -13,7 +13,7 @@ Install prerequisites, configure, build and install...
 ```tcl
 sudo apt-get install tcl8.5-dev libi2c-dev autoconf
 autoconf
-sudo ./configure --with-tcl=/usr/lib/tcl8.5
+./configure --with-tcl=/usr/lib/tcl8.5
 make
 sudo make install
 ```
