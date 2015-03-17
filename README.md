@@ -6,8 +6,8 @@ This package is a freely available open source package under the "Berkeley" lice
 
 tclspi was written by Karl Lehenbauer.  
 
-Building tclspi
------------
+#### Building tclspi
+
 Install prerequisites, configure, build and install...
 
 ```tcl
@@ -18,17 +18,16 @@ make
 sudo make install
 ```
 
-Using tclspi
------------
+#### Using tclspi
 
 ```tcl
 package require spi
 ```
 
-Example
--------
+#### Example
 
-```package require spi
+```tcl
+package require spi
 
 set spi [spi #auto /dev/spidev0.0]
 
@@ -49,8 +48,7 @@ puts "recd: $receiveString"
 $spi delete
 ```
 
-Contents
---------
+#### Contents
 
 ```Makefile.in```	Makefile template.  The configure script uses this file to
 		produce the final Makefile.
@@ -81,11 +79,9 @@ Contents
 ```tcl.m4```		Collection of Tcl autoconf macros.  Included by
 		aclocal.m4 to define SC_* macros.
 
-Building
---------
+### Building
 
-Unix
-----------
+#### Unix
 
 Building under most UNIX systems is easy, just run the configure script
 and then run make. 
@@ -97,8 +93,7 @@ $ make
 $ make install
 ```
 
-Windows
-----------
+#### Windows
 
 tclspi has not been built under Windows at this time.
 
@@ -108,8 +103,7 @@ If you have VC++, then you may wish to use the files in the win subdirectory and
 
 Instructions for using the VC++ makefile are written in the first part of the Makefile.vc file.
 
-Installation
--------------
+### Installation
 
 ```bash
 make install
