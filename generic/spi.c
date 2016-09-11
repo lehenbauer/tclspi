@@ -95,6 +95,9 @@ tclspi_spiObjectObjCmd(ClientData cData, Tcl_Interp *interp, int objc, Tcl_Obj *
 	    int ret;
 	    int length;
 
+		// zero out the spi structure
+		memset (&spi, 0, sizeof(spi));
+
 	    // obj transfer data delay
 	    if (objc != 4) {
 		Tcl_WrongNumArgs (interp, 2, objv, "writeData delayUsecs");
