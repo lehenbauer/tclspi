@@ -18,7 +18,29 @@ make
 sudo make install
 ```
 
-#### Using tclspi
+### Enable spi on Raspberry Pi
+
+The Raspberry PI is equipped with one SPI bus that has two chip selects.
+
+The SPI master driver is disabled by default on Raspbian.  The enable it, use raspi-config or ensure the line dtparam-spi-on isn't commented out in /boot/config.txt and reboot.  If the SPI driver was loaded you should see the device /dev/spidev0.0.  This information taken from https://www.raspberrypi.org/documentation/hardware/raspberrypi/spi/README.md
+
+To enable SPI using raspi-config:
+
+* sudo raspi-config
+* select option 5, interfacing options
+* select option P4 SPI
+* It says "Would you like the SPI interface to be enabled?", select Yes.
+* raspi-config will say "The SPI interface is enabled"
+* select Finish in raspi-config
+* execute sudo reboot
+
+After rebooting and logging back in, an "ls /dev/spi*" from a shell should show _/dev/spidev0.0_ and _/dev/spidev0.1_.  If is says _/dev/spi* not found_ then you didn't successfully get the SPI interface enabled.
+
+### Obtaining permissions to access the /dev/spidev* devices
+
+The user _pi_ has permissions to access the spi device, as does the superuser.  To grant permission to other users, edit /etc/group and add the user names to the line beginning with _spi_, comma-separated.  After permissions have changed the user must log out and log back in before the new permissions take effect.
+
+#### Using tclspi from Tcl
 
 ```tcl
 package require spi
