@@ -11,9 +11,9 @@ tclspi was written by Karl Lehenbauer.
 Install prerequisites, configure, build and install...
 
 ```tcl
-sudo apt-get install tcl8.5-dev libi2c-dev autoconf
+sudo apt-get install tcl8.6-dev libi2c-dev autoconf
 autoconf
-./configure --with-tcl=/usr/lib/tcl8.5
+./configure --with-tcl=/usr/lib/tcl8.6
 make
 sudo make install
 ```
